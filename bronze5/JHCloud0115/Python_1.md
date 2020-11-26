@@ -20,8 +20,7 @@ print(a-b)
 한 생명체에게 얼마씩 돈을 줄 수 있는가?
 또, 생명체들에게 동일하게 분배한 후 남는 돈은 얼마인가?
 ```python
-money = int(input())
-living = int(input())
+money, living = map(int, input('').split(' '))
 m_changes = money//living
 n_changes =  money % living
 print(m_changes,n_changes)
